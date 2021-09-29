@@ -1,0 +1,36 @@
+https://www.freakyjolly.com/ionic-google-maps-geolocation-geocoder-application/
+>> ionic start ionic-geolocation-geocoder-application blank --type=angular
+
+GCP SETUP:
+https://developers.google.com/maps/documentation/javascript/cloud-setup
+https://developers.google.com/maps/documentation/javascript/get-api-key
+	google-maps-tutorial
+	GoogleMapsApiKey
+	AIzaSyAUO-7K30bX-CrGkkrTWEykczZ4iRa77hE
+
+- update index.html with,   <!-- Google API -->
+  <script src="https://maps.google.com/maps/api/js?key=API_KEY"></script>
+- API_KEY: AIzaSyAUO-7K30bX-CrGkkrTWEykczZ4iRa77hE
+
+>> ionic cordova plugin add cordova-plugin-geolocation
+	error: The Cordova CLI was not found on your PATH. Please install Cordova globally:
+        npm i -g cordova
+	>> npm i -g cordova
+>> npm install @ionic-native/geolocation
+
+>> ionic cordova plugin add cordova-plugin-nativegeocoder
+>> npm install @ionic-native/native-geocoder
+
+https://ionicframework.com/docs/native/splash-screen
+>> ionic cordova plugin add cordova-plugin-splashscreen
+>> npm install @ionic-native/splash-screen
+
+>> ionic cordova plugin add cordova-plugin-statusbar
+>> npm install @ionic-native/status-bar
+
+>> npm install --save @ionic-native/core
+
+
+>> ionic cordova platform add android
+>> ionic cordova build android
+>> ionic cordova run android -l
