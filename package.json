@@ -76,7 +76,9 @@
   "description": "An Ionic project",
   "cordova": {
     "plugins": {
-      "cordova-plugin-geolocation": {},
+      "cordova-plugin-geolocation": {
+        "GPS_REQUIRED": "true"
+      },
       "cordova-plugin-nativegeocoder": {},
       "cordova-plugin-splashscreen": {},
       "cordova-plugin-statusbar": {},
