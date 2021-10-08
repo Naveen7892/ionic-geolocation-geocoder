@@ -26,6 +26,14 @@ export class HomePage implements OnInit {
   constructor(
     private geolocation: Geolocation,
     private nativeGeocoder: NativeGeocoder) {
+      setInterval(() => {
+        this.geolocation.getCurrentPosition().then((resp) => {
+          console.log(JSON.stringify(resp.coords));
+          this.latitude = resp.coords.latitude;
+          this.longitude = resp.coords.longitude;
+        console.log(this.latitude, this.longitude);
+        });
+      }, 2000);
   }
 
 
@@ -36,8 +44,11 @@ export class HomePage implements OnInit {
   loadMap() {
     this.geolocation.getCurrentPosition().then((resp) => {
 
+      // console.log(JSON.stringify(resp.coords));
       this.latitude = resp.coords.latitude;
       this.longitude = resp.coords.longitude;
+
+      console.log(this.latitude, this.longitude);
 
       let latLng = new google.maps.LatLng(resp.coords.latitude, resp.coords.longitude);
       let mapOptions = {
@@ -55,7 +66,7 @@ export class HomePage implements OnInit {
         this.latitude = this.map.center.lat();
         this.longitude = this.map.center.lng();
 
-        this.getAddressFromCoords(this.map.center.lat(), this.map.center.lng())
+        this.getAddressFromCoords(this.map.center.lat(), this.map.center.lng());
       });
 
     }).catch((error) => {

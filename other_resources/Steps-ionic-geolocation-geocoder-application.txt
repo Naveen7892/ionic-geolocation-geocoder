@@ -34,3 +34,16 @@ https://ionicframework.com/docs/native/splash-screen
 >> ionic cordova platform add android
 >> ionic cordova build android
 >> ionic cordova run android -l
+
+>> ionic cordova run android -l --dev
+
+>> npm i -g native-run
+
+>> adb devices
+>> adb -s 9c7ec5c tcpip 5555
+- get IP address of mobile
+>> adb connect 192.168.0.101:5555
+>> adb -s 192.168.0.101:5555 logcat | findstr "21382"
+
+https://stackoverflow.com/questions/37062125/neterr-connection-refused-ionic
+https://stackoverflow.com/questions/54752716/why-am-i-seeing-neterr-cleartext-not-permitted-errors-after-upgrading-to-cordo
