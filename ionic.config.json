@@ -1,7 +1,11 @@
 {
-  "name": "ionic-geolocation-geocoder-application",
-  "integrations": {
-    "cordova": {}
-  },
-  "type": "angular"
+    "name": "ionic-geolocation-geocoder-application",
+    "integrations": {
+        "cordova": {}
+    },
+    "type": "angular",
+    "proxies": [{
+        "path": "/localhost",
+        "proxyUrl": "http://localhost:26309"
+    }]
 }

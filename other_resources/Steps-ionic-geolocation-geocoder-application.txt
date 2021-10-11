@@ -1,5 +1,14 @@
 https://www.freakyjolly.com/ionic-google-maps-geolocation-geocoder-application/
 
+https://www.positronx.io/ionic-cordova-geolocation-and-geocoder-tutorial-with-examples/
+	npm i -g cordova-res
+	ionic cordova resources android --force
+	npm i @ionic-native/core
+		ANDROID_SDK_ROOT
+		ANDROID_HOME (deprecated)
+	ionic cordova platform add android
+	ionic cordova build android
+	ionic cordova run android -l
 =============================================================================
 ========================================
 >> nvm list
