@@ -1,7 +1,9 @@
 https://www.freakyjolly.com/ionic-google-maps-geolocation-geocoder-application/
 
 https://www.positronx.io/ionic-cordova-geolocation-and-geocoder-tutorial-with-examples/
+  npm install -g @ionic/cli
 	npm i -g cordova-res
+  npm i -g native-run
 	ionic cordova resources android --force
 	npm i @ionic-native/core
 		ANDROID_SDK_ROOT
@@ -109,4 +111,33 @@ https://stackoverflow.com/questions/54752716/why-am-i-seeing-neterr-cleartext-no
 >> ionic cordova run android -l --target=9c7ec5c
 >> ionic cordova run android -l --target=emulator-5554
 
-=======================================================
+==================================================================================
+SETTING UP AND RUNNING APP IN WINDOWS 10 (Office Laptop):
+
+npm install -g @ionic/cli
+npm i -g cordova-res
+npm i -g native-run
+
+https://www.oracle.com/java/technologies/javase/javase8u211-later-archive-downloads.html (JDK 1.8)
+
+https://gradle.org/releases/ (Gradle 7.3)
+https://stackoverflow.com/a/45070795/5276297 (Gradle env)
+
+
+C:\Users\naveenkumar>javac -version
+javac 1.8.0_301
+
+C:\Users\naveenkumar>gradle --version
+------------------------------------------------------------
+Gradle 7.3
+------------------------------------------------------------
+Build time:   2021-11-09 20:40:36 UTC
+Revision:     96754b8c44399658178a768ac764d727c2addb37
+Kotlin:       1.5.31
+Groovy:       3.0.9
+Ant:          Apache Ant(TM) version 1.10.11 compiled on July 10 2021
+JVM:          1.8.0_301 (Oracle Corporation 25.301-b09)
+OS:           Windows 10 10.0 amd64
+
+==================================================================================
+
